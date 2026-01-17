@@ -1,15 +1,8 @@
-/* ===================================================================
- * Luther 1.0.0 - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function(html) {
 
     "use strict";
 
     html.className = html.className.replace(/\bno-js\b/g, '') + ' js ';
-
-
 
    /* Animations
     * -------------------------------------------------- */
@@ -21,7 +14,7 @@
     .add({
         targets: '#loader',
         opacity: 0,
-        duration: 1000,
+        duration: 100,
         begin: function(anim) {
             window.scrollTo(0, 0);
         }
@@ -64,7 +57,6 @@
         translateY: [100, 0],
         opacity: [0, 1]
     }, '-=800');
-
 
 
    /* Preloader
